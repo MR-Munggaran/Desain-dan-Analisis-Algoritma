@@ -1,0 +1,14 @@
+mendeklarasikan diameter , pi, tinggi, volume
+masukan nilai diameter = 5, tinggi = 4, dan pi = 3,14...
+kalikan Diameter, tinggi, pi = volume
+menampilkan volume
+
+
+var volume, diameter, tinggi, pi
+
+pi = 3,14
+diameter <- 5
+tinggi <- 4
+diameter <- diameter ** 2
+volume = 1/12* diameter * tinggi * pi
+write(volume)

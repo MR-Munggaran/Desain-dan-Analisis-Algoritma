@@ -1,0 +1,15 @@
+mendeklarasikan jari - jari , pi, tinggi, volume
+masukan nilai jari - jari, tinggi, dan pi
+pangkatkan jari jari dengan dua
+kalikan jari jari, tinggi, pi = volume
+menampilkan volume
+
+
+var volume, jari - jari, tinggi, pi
+
+pi = 3,14
+jari-jari <- 3
+tinggi <- 5
+jari-jari <- jari-jari**2
+volume = jari-jari * tinggi * pi
+write(volume)
