@@ -1,0 +1,13 @@
+algoritma 
+step1 mendeklarasikan luas, alas dan tinggi
+step2 masukan alas = 25, tinggi = 30
+step3 mnghitung luas  = 1/2 alas kali tinggi
+step4 menampilkan luas
+
+pseudocode
+deklarasi 
+var luas, alas, tinggi
+alas -> 25
+tinggi -> 30
+luas = 1/2 alas tingi
+write(luas)

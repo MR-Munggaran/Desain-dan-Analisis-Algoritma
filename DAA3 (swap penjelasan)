@@ -1,0 +1,5 @@
+Fungsi untuk menukar dua variabel x dan y
+define swap (x,y)
+BUFFER = x
+x = y
+y = BUFFER

@@ -1,0 +1,15 @@
+algoritma
+
+steps 1 = definisikan variabel untuk piring 1, piring 2, piring 3
+steps 2 = masukan piring 2 ke piring 3, piring 2 kosong
+steps 3 = masukan piring 1 ke piring 2, piring 1 kosong
+steps 4 = masukan piring 3 ke piring 1, piring 3 kosong
+
+pseudocode
+define swap(p1,p2)
+
+p3 = p2
+p2 = p1
+p3 = p1
+
+

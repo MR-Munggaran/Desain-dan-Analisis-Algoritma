@@ -1,0 +1,14 @@
+algoritma:
+tentukan nilai dari a dan b terlebih dahulu
+
+step 1 jika b = 0 maka a menjadi hasil dan selesai. jika b tidak sama dengan 0, lanjut
+step 2 jika r merupakan hasil FPB dari a dan b
+step 3 kalikan a dan b lalu dibagi dengan FPB dari a dan b, dan keluar hasilnya
+pseudocode
+r -> a mod b
+while
+a <- b
+c <- r
+d<- a.b
+d<- d/r
+return d

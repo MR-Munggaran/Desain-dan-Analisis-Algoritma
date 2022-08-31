@@ -1,0 +1,13 @@
+mendeklarasikan luas, alas, tinggi
+masukan nilai alas, dan tinggi
+kalikan alas dan tinggi = luas jajar genjang
+menampilkan luas
+
+
+
+var luas, alas, tinggi
+
+alas <- 3
+tinggi <- 5
+luas = alas * tinggi
+write(luas)
