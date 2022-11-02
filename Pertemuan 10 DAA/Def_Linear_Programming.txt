@@ -1,0 +1,6 @@
+Algoritma dasar di balik pemrograman linier dikembangkan oleh George Dantzig 
+di University of California di Berkeley pada awal 1940-an. Dantzig menggunakan konsep 
+ini untuk bereksperimen dengan perencanaan pasokan dan kapasitas logistik untuk pasukan 
+saat bekerja untuk Angkatan Udara AS. Pada akhir Perang Dunia Kedua, Dantzig mulai bekerja 
+untuk Pentagon dan mematangkan algoritmenya menjadi teknik yang ia beri nama pemrograman linier. 
+Itu digunakan untuk perencanaan pertempuran militer.
