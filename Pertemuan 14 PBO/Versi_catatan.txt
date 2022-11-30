@@ -1,0 +1,107 @@
+Kasus Fraud Analytics
+
+we can use SNA to detect fraud. With humans being 
+social creature,human behavior is said to be affected by the people 
+that you are surrounded by. The word homophily has been coined to 
+represent the effect their social network has on a person. Extending 
+this concept, a homophilic network is a group of people who are 
+likely to be associated with each other due to some common factor; 
+for example, having the same origin or hobbies, being part of the 
+same gang or the same university, or some combination of other 
+factors.
+
+If we want to analyze fraud in a homophilic network, we can take 
+advantage of the relationships between the person under 
+investigation and other people in the network, whose risk of 
+involvement in fraud has already been carefully calculated. Flagging 
+a person due to their company is sometimes also called guilt by 
+association.
+
+In an effort to understand the process, let's first look at a simple 
+case. For that, let's use a network with nine vertices and eight 
+edges. In this network, four of the vertices are known fraud cases 
+and are classified as fraud (F). Five of the remaining people have no 
+fraudrelated history and are classified as non-fraud (NF).
+
+Note that we have already conducted detailed analysis to 
+classify each node as a graph or non-graph. Let's assume that we 
+add another vertex, named q, to the network, as shown in the 
+following figure. We have no prior information about this person 
+and whether this person is involved in fraud or not. We want to 
+classify this person as NF or F based on their links to the existing 
+members of the social network:
+• Using a simple method that does not use centrality metrics and 
+additional information about the type of fraud
+• Using a watchtower methodology, which is an advanced 
+technique that uses the centrality metrics of the existing nodes, 
+as well as additional information about the type of fraud
+
+The simple technique of fraud analytics is based on the
+assumption that in a network, the behaviour of a person is
+affected by the people they are connected to. In a network, 
+two vertices are more likely to have similar behaviour if they are 
+associated with each other. Based on this assumption, we devise a 
+simple technique. If we want to find the probability that a certain
+node, a, belongs to F, the probability is represented by P(F/q) and
+is calculated as follows:
+...............................
+Let's apply this to the preceding figure, where Neighborhoodn represents
+the neighborhood of vertex n and w(n, nj) represents the weight of the
+connection between n and nj. Also, degreeq is the degree of node q. 
+Then, the probability is calculated as follows:
+.....................
+
+Based on this analysis, the likelihood of this person being involved in fra
+ud is 67%. We need to set 
+a threshold. If the threshold is 30%, then this person is above the thresho
+ld value and we can safely flag them as F.
+
+Metodologi pemantauan fraud 
+analytics
+
+The previous, simple fraud analytics technique has the following two 
+limitations:
+• It does not evaluate the importance of each vertex in the social 
+network. A connection to a hub that is involved in fraud may have 
+different implications than a relationship with a remote, isolated 
+person.
+• When labeling someone as a known case of fraud in an existing 
+network, we do not consider the severity of the crime.
+The watchtower fraud analytics methodology addresses these two 
+limitations. First, let's look at a couple of concepts.
+
+Menentukan nilai negatif
+If a person is known to be 
+involved in fraud, we say that 
+there is a negative outcome 
+associated with this individual. 
+Not every negative outcome is 
+of the same severity or 
+seriousness. A person known to 
+be impersonating another 
+person will have a more 
+serious type of negative 
+outcome associated with them, 
+compared to someone who is 
+just trying to use an expired 
+$20 gift card, in an innovative 
+way to make it valid.
+
+Menentukan dan memodelkan derajat kecurigaan
+
+• The degree of suspicion (DOS) quantifies our level of suspicion that a person 
+may be involved in fraud. A DOS value of 0 means that this is a low-risk person 
+and a DOS value of 9 means that this is a high-risk person.
+• Analysis of historical data shows that professional fraudsters have important
+positions in their social networks. To incorporate this, first we calculate all of
+the four centrality metrics of each vertex in our network. We then take the
+average of these vertices. This translates to the importance of that particular
+person in the network.
+• If a person associated with a vertex is involved in fraud, we illustrate this
+negative outcome by scoring the person using the pre-determined values
+shown in the preceding table. This is done so that the severity of the crime is
+reflected in the value of each individual DOS.
+• Finally, we multiply the average of the centrality metrics and the negative
+outcome score to get the value of the DOS. We normalize the DOS by dividing
+it by the maximum value of the DOS in the network.
+
